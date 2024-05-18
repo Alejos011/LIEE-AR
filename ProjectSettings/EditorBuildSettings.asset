@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/ajustes.unity
+    guid: 935056355c7caaa43af168bdfca30a7c
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/Bancosss.unity
+    guid: 18f7cc3289f3e554297fc70863479339
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/Bienvenida-empezar.unity
+    guid: 0f898e1f7f390814ca62df6fa22aa4e9
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/Bienvenida-logo.unity
+    guid: adce3dea478165846a1d4b34b77fcba0
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/Bienvenida-nombre.unity
+    guid: 865b512bdd400424aa645d42b268b9e3
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/choque.unity
+    guid: 7982100a9abd6dd49984d3bd821899a0
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/conmu.unity
+    guid: aabe4f98cb5633f4fb18dc18ef8ba64d
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/esfera.unity
+    guid: 145ea32e4638d594188ae2ca5862e583
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/foto.unity
+    guid: fc88e0f7ee7d113429331a9d3a8602dd
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/Inicio-ayuda.unity
+    guid: 97561e64441d1c245a8977f4950773e1
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/instruccioness.unity
+    guid: 68cb0766526efb74a98caba0735023b3
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/Inicio-inaoe 1.unity
+    guid: f74e2c8eb51778747b046b0dcd533efb
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/Requerimientoss.unity
+    guid: 6303566bc35db574693f5a9dda84bab2
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/sobre.unity
+    guid: 829ab0f6239f3594891f1bb6b8fdd301
+  - enabled: 1
+    path: Assets/Scenes/RA/RA.unity
+    guid: 3e85f4c2a7cf4284baac4209d1d8bece
+  - enabled: 1
+    path: Assets/Scenes/RV/RVChoque.unity
+    guid: d21087a2d2926bd45a0ba708aa4381a8
+  - enabled: 1
+    path: Assets/Scenes/RV/RVConmu.unity
+    guid: fcaea7446efe9614cb5fde35a61326e5
+  - enabled: 1
+    path: Assets/Scenes/RV/RVEsfera.unity
+    guid: 370860d29d4133f4c9ebbfeb4d854777
+  - enabled: 1
+    path: Assets/Scenes/RV/RVFoto.unity
+    guid: ba4c6fbf64802804aa5463998b3bb15a
+  - enabled: 1
+    path: Assets/Scenes/RV/RVSobre.unity
+    guid: b8ece16dd4a047143b2a806fe0bfd409
+  m_configObjects: {}
