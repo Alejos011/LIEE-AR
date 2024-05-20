@@ -11,7 +11,7 @@ public class AnimSecuence : MonoBehaviour
     public GameObject Btn_Plus;
     public GameObject Btn_Expanded;
     public GameObject Txt_Bienvenida;
-
+    public GameObject Instrucciones;
     void Start()
     {
         //Deshabilitar animaciones al inicio de la escena
@@ -27,12 +27,13 @@ public class AnimSecuence : MonoBehaviour
         Animator PlusAnimator = Btn_Plus.GetComponent<Animator>();
         Animator ExpandedAnimator = Btn_Expanded.GetComponent<Animator>();
         Animator BienvenidaAnimator = Txt_Bienvenida.GetComponent<Animator>();
-
+        Animator InstruccionesAnimator = Instrucciones.GetComponent<Animator>();
         BotAnimator.enabled = false;
         TopAnimator.enabled = false;
         PlusAnimator.enabled = false;
         ExpandedAnimator.enabled = false;
         BienvenidaAnimator.enabled = false;
+        InstruccionesAnimator.enabled = false;
     }
 
     //Habilitar animaciones de inicio de ruta RV
@@ -43,12 +44,18 @@ public class AnimSecuence : MonoBehaviour
         Animator PlusAnimator = Btn_Plus.GetComponent<Animator>();
         Animator ExpandedAnimator = Btn_Expanded.GetComponent<Animator>();
         Animator BienvenidaAnimator = Txt_Bienvenida.GetComponent<Animator>();
-
+        Animator InstruccionesAnimator = Instrucciones.GetComponent <Animator>();
         BotAnimator.enabled = true;
         TopAnimator.enabled = true;
         PlusAnimator.enabled = true;
         ExpandedAnimator.enabled = true;
         BienvenidaAnimator.enabled = true;
+        InstruccionesAnimator.enabled = true;
     }
 
+    public void SubtitlesDisabled()
+    {
+        Animator BienvenidaSalida = Txt_Bienvenida.GetComponent<Animator>();
+        BienvenidaSalida.Play("BienvenidaAnimSalida");
+    }
 }

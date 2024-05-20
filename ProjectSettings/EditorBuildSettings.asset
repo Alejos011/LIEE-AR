@@ -6,20 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Interface_Scenes/ajustes.unity
-    guid: 935056355c7caaa43af168bdfca30a7c
-  - enabled: 1
-    path: Assets/Scenes/Interface_Scenes/Bancosss.unity
-    guid: 18f7cc3289f3e554297fc70863479339
-  - enabled: 1
-    path: Assets/Scenes/Interface_Scenes/Bienvenida-empezar.unity
-    guid: 0f898e1f7f390814ca62df6fa22aa4e9
-  - enabled: 1
     path: Assets/Scenes/Interface_Scenes/Bienvenida-logo.unity
     guid: adce3dea478165846a1d4b34b77fcba0
   - enabled: 1
     path: Assets/Scenes/Interface_Scenes/Bienvenida-nombre.unity
     guid: 865b512bdd400424aa645d42b268b9e3
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/Bienvenida-empezar.unity
+    guid: 0f898e1f7f390814ca62df6fa22aa4e9
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/ajustes.unity
+    guid: 935056355c7caaa43af168bdfca30a7c
+  - enabled: 1
+    path: Assets/Scenes/Interface_Scenes/Bancosss.unity
+    guid: 18f7cc3289f3e554297fc70863479339
   - enabled: 1
     path: Assets/Scenes/Interface_Scenes/choque.unity
     guid: 7982100a9abd6dd49984d3bd821899a0

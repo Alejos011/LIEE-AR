@@ -25,7 +25,7 @@ public class CubeCollider : AnimSecuence
     // Diálogos para Conmutación
     private string[] dialogosMarcador1Conmu = new string[5]
     {
-        "Tras la prueba de choque térmico, la lámpara se traslada al banco de conmutación para verificar su tensión, voltaje y horas de vida.",
+        "Bienvenido al banco: Conmutación",
         "Según las horas de vida de la lámpara, se divide entre 2 para determinar el número de ciclos que estará en el banco de conmutación.",
         "Es decir, si un foco tiene 10,000 horas, el total de ciclos que va tener dentro de Conmutación son 5,000.",
         "Cada ciclo conforma en prender y encender el foco cada 30 segundos, esto gracias a un temporizador y algunos cables más...",
@@ -35,7 +35,7 @@ public class CubeCollider : AnimSecuence
     // Diálogos para Sobre
     private string[] dialogosMarcador1Sobre = new string[8]
     {
-        "En el banco de sobretensiones simula el efecto de un aumento repentino de voltaje sobre los valores establecidos de la lámpara.",
+        "Bienvenido al banco: Sobretensiones",
         "El banco genera una onda llamada ring wave para simular descargas atmosféricas hacia la lámpara.",
         "El generador de impulsos produce pulsos eléctricos, los cuales pueden ser visualizados con un osciloscopio.",
         "La punta atenuadora ajusta la señal de entrada para su visualización y medición precisa por parte del osciloscopio.",
@@ -48,7 +48,7 @@ public class CubeCollider : AnimSecuence
     // Diálogos para Esfera
     private string[] dialogosMarcador1Esfera = new string[9]
     {
-        "El banco de la esfera integradora tiene una cavidad cilíndrica con revestimiento reflectante blanco.",
+        "Bienvenido al banco: Esfera",
         "Utilizando un espectro-radiómetro y un luxómetro, mide flujo luminoso, temperatura y rendimiento de color de la lámpara.",
         "Con un analizador de calidad de energía se obtienen datos eléctricos del comportamiento de la lámpara.",
         "El índice del rendimiento de color se percibe como la calidad del color al observar una lámpara, similar a tu percepción visual del color.",
@@ -62,7 +62,7 @@ public class CubeCollider : AnimSecuence
     // Diálogos para Foto
     private string[] dialogosMarcador1Foto = new string[6]
     {
-        "Este banco de pruebas fotogoniómetro se utiliza para entender cómo se distribuye la luz emitida por lámparas en diferentes direcciones.",
+        "Bienvenido al banco: Fotogoniómetro",
         "Primero, verifican la intensidad de la luz con un dispositivo especial llamado luxómetro para asegurarse de que esté todo correcto.",
         "Luego, encienden la lámpara de prueba en una habitación oscura y unos sensores montados en brazos giran alrededor de la lámpara.",
         "Estos brazos giran para medir la cantidad de luz que llega desde diferentes ángulos. Es como trazar un mapa de cómo se distribuye la luz alrededor de la lámpara.",
@@ -194,6 +194,10 @@ public class CubeCollider : AnimSecuence
             ActiveDialogue.Play();
             yield return new WaitForSeconds(selectedClips[i].length);
 
+            if (i == selectedClips.Length - 1)
+            {
+                SubtitlesDisabled();
+            }
         }
     }
 }
