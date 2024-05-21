@@ -1,1 +1,1 @@
-************Install Vuforia SDK to avoid errors************
+************Install Vuforia SDK by your own to avoid errors************
