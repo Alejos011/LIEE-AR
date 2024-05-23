@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class WriteUserName : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class WriteUserName : MonoBehaviour
     //Objeto tipo TextMeshProUGUI para modificar comportamientos de la advertencia
     public TextMeshProUGUI Advertencia;
 
+    //gameobject cancelar
+    public RawImage cancelar;
 
     //Variables privadas
     private string Name { get; set; }
@@ -25,7 +28,7 @@ public class WriteUserName : MonoBehaviour
 
     void Start()
     {
-
+        CheckFileExists();
     }
 
     void Update()
@@ -34,6 +37,7 @@ public class WriteUserName : MonoBehaviour
         NameIsSetStart();
     }
 
+    
 
     //Seteamos el nombre del usuario al presionar "Empezar" en local
     public void SetUserName()
@@ -43,7 +47,20 @@ public class WriteUserName : MonoBehaviour
         string filePath = Path.Combine(Application.persistentDataPath, filename);
         string data = nombreusuario;
         File.WriteAllText(filePath,data);
-            
+
+    }
+
+    private void CheckFileExists()
+    {
+        string filename = "UserNameData.txt";
+        string filePath = Path.Combine(Application.persistentDataPath, filename);
+
+        if (File.Exists(filePath))
+        {
+            EnableCancelButton();
+        }
+        else
+            DisableCancelButton();
     }
 
     //M�todo que Setea el nombre del usuario dentro del forms
@@ -94,6 +111,16 @@ public class WriteUserName : MonoBehaviour
     private void EnableAd()
     {
         Advertencia.enabled = true;
+    }
+    
+    private void EnableCancelButton()
+    {
+        cancelar.enabled = true;
+    }
+
+    private void DisableCancelButton()
+    {
+        cancelar.enabled = false;
     }
 
     //Logica para verificar si los campos est�n llenos
